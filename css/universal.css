@@ -43,7 +43,6 @@ Table of contents
   * Footer
 * Stop animation on mobile devices
 * Demo page
-* Custom
 
 -------------------------------------------------------------------*/
 /* Fonts */
@@ -63,7 +62,7 @@ html {
 body {
   width: 100% !important;
   height: 100% !important;
-  font: normal 15px/1.8 Lato, sans-serif;
+  font: normal 1.7rem/1.8 Raleway, sans-serif;
   letter-spacing: 0.03em;
   color: #444;
   background-color: #fff;
@@ -165,7 +164,7 @@ h4,
 h5,
 h6 {
   margin: 0 0 35px;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   letter-spacing: 0.1em;
   line-height: 1.7;
   font-weight: 800;
@@ -288,8 +287,8 @@ section,
 
 .section-small {
   position: relative;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .list-inline > li {
@@ -297,17 +296,16 @@ section,
   vertical-align: bottom;
 }
 
-/* .label,
+.label,
 input,
-.btn,
 textarea,
 .dropdown-menu,
 .panel,
 .progress,
 .list-group-item,
 select {
-  border-radius: 0.5rem !important;
-} */
+  border-radius: 0 !important;
+}
 
 .label {
   padding: 0.2em 0.7em 0.3em 0.7em;
@@ -359,17 +357,12 @@ select {
   border: 2px solid #fff;
   color: #fff !important;
   background-color: transparent;
+  border-radius: 0.5rem !important;
 }
 
 .btn-dark-border {
   border: 1px solid #000;
   color: #000;
-  background-color: transparent;
-}
-
-.btn-red-border {
-  border: 1px solid #d31216;
-  color: #d31216;
   background-color: transparent;
 }
 
@@ -600,9 +593,9 @@ a .fa:hover {
 }
 
 .navbar-custom a {
-  color: #000;
-  font-family: "Lato", sans-serif;
-  font-size: 13px;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
@@ -912,15 +905,17 @@ a.btn-nav .btn {
   }
 
   .navbar-custom {
-    padding: 0 30px;
+    padding: 30px;
     border-bottom: 0;
     letter-spacing: 1px;
     background: 0 0;
-    background: #fff;
+    /* background: transparent; */
+    background: linear-gradient(360deg, transparent, #000);
   }
   .navbar-custom.top-nav-collapse {
-    padding: 0 30px;
+    padding: 10px 30px;
     background-color: #fff;
+    background: #fff !important;
   }
 
   .navbar-custom .nav .dropdown-menu li a:hover {
@@ -1041,7 +1036,7 @@ a.btn-nav .btn {
   }
 
   .navbar-collapse {
-    background-color: #eee !important;
+    background-color: #fff !important;
     border-top: 1px solid transparent;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   }
@@ -1294,7 +1289,7 @@ a.btn-nav .btn {
 }
 
 .intro-body:before {
-  background: rgba(7, 9, 21, 0.5);
+  background: rgba(7, 9, 21, 0.6);
   content: "";
   left: 0;
   top: 0;
@@ -1422,12 +1417,11 @@ a.btn-nav .btn {
   z-index: -9;
 }
 
-.section-video {
+/* .section-video {
   padding-top: 60px;
   padding-bottom: 60px;
   top: 0 !important;
-  opacity: 1 !important;
-}
+  opacity: 1 !important; } */
 
 .bg-video-small {
   text-align: left !important;
@@ -1612,11 +1606,11 @@ input[type="radio"] {
   padding-top: 10px;
 }
 
-/* @media (max-width: 991px) {
+@media (max-width: 991px) {
   #contact {
     text-align: center;
   }
-} */
+}
 /* Quote */
 blockquote {
   padding: 18px;
@@ -2080,7 +2074,7 @@ blockquote:after {
 }
 
 .portfolio-item a:hover .portfolio-overlay .caption {
-  bottom: 10%;
+  bottom: 50%;
   opacity: 1;
 }
 
@@ -2695,27 +2689,28 @@ li .shop-cart a:hover {
 
 /*# sourceMappingURL=universal.css.map */
 
-/* Custom */
+.d-flex {
+  display: flex;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.title-intro {
+  font-weight: 600;
+  text-transform: none;
+}
+.align-items-center {
+  align-items: center;
+}
+.img-borders {
+  border-radius: 0.5rem;
+}
 
 .card {
   background-color: #fff;
   border-radius: 0.5rem;
   padding: 15px;
   box-shadow: 5px 5px 13px -1px rgba(63, 63, 63, 20%);
-}
-
-.d-flex {
-  display: flex;
-}
-
-.justify-content-center {
-  justify-content: center;
-}
-
-.title-intro {
-  color: #444;
-  text-shadow: none;
-  letter-spacing: 0;
 }
 
 .width-100 {
@@ -2792,6 +2787,45 @@ li .shop-cart a:hover {
   display: flex;
   align-items: center;
 }
+.btn-outline {
+  padding: 15px;
+  border: 2px solid #8a8a8a;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.btn-outline-red {
+  border: 2px solid #d31216 !important;
+}
+.btn-outline:hover {
+  border: 2px solid #d31216;
+}
+.btn-image {
+  width: 100%;
+  height: 300px;
+  border-radius: 0.5rem;
+  background-size: cover;
+  background-position: center;
+}
+.blur-image {
+  background: rgba(255, 255, 255, 0.2);
+  height: 300px;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.d-none {
+  display: none !important;
+}
+.mt-10 {
+  margin-top: 10rem;
+}
 @media (max-width: 991px) {
   .mt-md-20 {
     margin-top: 20px;
@@ -2802,5 +2836,10 @@ li .shop-cart a:hover {
   .img-investors-md-none,
   section.footer div div {
     flex-direction: column;
+  }
+  .services-md-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

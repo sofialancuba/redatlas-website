@@ -41,7 +41,7 @@
             <span class="icon-bar"></span></button
           ><a href="#page-top" class="navbar-brand page-scroll">
             <!-- Text or Image logo--><img
-              src="img/logo.png"
+              src="img/logo-red.png"
               alt="Logo"
               class="logo" /><img
               src="img/logo.png"
@@ -62,37 +62,41 @@
         </div>
       </div>
     </nav>
-    <!-- Header-->
-    <header data-background="img/header/intro.jpg" class="intro">
+    <header data-background="img/header/intro.jpg" class="intro introvideo">
       <!-- Intro Header-->
       <div class="intro-body">
         <div class="container">
           <div class="row d-flex justify-content-center">
-            <div
-              data-wow-delay="1s"
-              class="col-lg-5 col-md-6 col-sm-8 col-xs-11 wow fadeIn"
-            >
-              <div class="card row">
-                <h2 class="title-intro">Access Demo</h2>
-                <div class="col-lg-6 col-md-6">
-                  <a href="#" class="btn btn-red width-100">Access Demo</a>
-                </div>
-                <div class="col-lg-6 col-md-6 mt-md-20">
-                  <a href="#" class="btn btn-red width-100">Sign Up</a>
-                </div>
-              </div>
+            <div class="col-lg-6 col-md-6 col-xl-6 col-sm-8 col-8">
+              <h4 class="title-intro">
+                Real Estate Data (RED) Atlas is a data aggregation platform and
+                marketplace that enables real estate brokers, investors, and
+                managers to view all publicly available data, buy and sell
+                private data, and analyze metadata in emerging markets.
+              </h4>
+              <ul class="list-inline lead">
+                <li>
+                  <a href="#contact" class="btn btn-border btn-lg page-scroll"
+                    >ACCESS DEMO</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
         </div>
+      </div>
+      <div class="video-controls video-controls-visible hidden-sm hidden">
+        <a id="video-volume" href="#" class="fa fa-volume-off fa-lg"></a>
+        <a id="video-play" href="#" class="fa fa-pause fa-lg"></a>
       </div>
     </header>
     <!-- Slider-->
     <section id="about" class="section-small">
       <div class="container">
-        <div class="row d-flex justify-content-center">
-          <div data-wow-delay=".5s" class="col-lg-7 wow fadeIn">
-            <h3 class="text-center">About</h3>
-            <p class="no-pad text-center">
+        <div class="row d-flex align-items-center img-investors-md-none">
+          <div class="col-lg-6 col-md-6 col-sm-8 col-xs-10">
+            <h3>About</h3>
+            <p class="no-pad">
               RED Atlas, Inc. provides commercial real estate information,
               analytics and management services in underserved and emerging
               markets. We conduct expansive, ongoing data scraping and research
@@ -106,90 +110,130 @@
               third-party data marketplace.
             </p>
           </div>
+          <div
+            class="col-lg-6 col-lg-offset-1 col-md-6 col-sm-8 col-xs-10 mt-md-40"
+          >
+            <img
+              src="img/header/3.jpg"
+              alt=""
+              class="img-responsive center-block img-borders"
+            />
+          </div>
         </div>
       </div>
     </section>
     <!-- About Section-->
     <section id="services" class="bg-gray">
       <div class="container wow fadeIn">
-        <div class="row">
-          <div data-wow-delay=".5s" class="col-lg-12 wow fadeIn">
+        <div class="row services-md-container">
+          <div class="col-lg-12">
             <h3 class="text-center">Services</h3>
           </div>
-          <div data-wow-delay=".7s" class="col-lg-12 wow fadeIn line-bottom">
-            <h4 class="mb-1 sub-title text-center">Enterprise</h4>
-            <div
-              class="img-service"
-              style="background-image: url('img/services/1.jpg')"
-            ></div>
-            <div class="row pt-0 mt-3">
-              <div class="col-lg-4 col-md-4">
+          <div class="col-lg-5 col-md-6 col-sm-8 col-xs-10">
+            <h4 class="mb-1 sub-title">Enterprise</h4>
+            <div>
+              <div class="btn-outline mb-2" id="research">
                 <h5 class="title-section-services">
                   <span class="color-red">RED</span> Research – Q1, 2021
                 </h5>
-                <p class="color-gray">
-                  Report generation with metadata analytics
-                </p>
               </div>
-              <div class="col-lg-4 col-md-4">
+              <div class="btn-outline mb-2" id="mass">
                 <h5 class="title-section-services">
                   <span class="color-red">RED</span> MaSS – Q2, 2021
                 </h5>
-                <p class="color-gray">Data Management and Software Solutions</p>
               </div>
-              <div class="col-lg-4 col-md-4">
+              <div class="btn-outline" id="api">
                 <h5 class="title-section-services">
                   <span class="color-red">RED</span> API – Q3, 2021
                 </h5>
-                <p class="color-gray">Application programing interface</p>
               </div>
             </div>
           </div>
           <div
-            data-wow-delay=".7s"
-            class="col-lg-12 wow fadeIn line-bottom mt-35"
+            class="col-lg-6 col-lg-offset-1 col-md-6 col-sm-8 col-xs-10 mt-md-40 text-center"
           >
-            <h4 class="mb-1 sub-title text-center">Consumer</h4>
             <div
-              class="img-service"
-              style="background-image: url('img/services/2.jpg')"
-            ></div>
-            <div class="row pt-0 mt-3">
-              <div class="col-lg-4 col-md-4">
+              class="btn-image"
+              style="background-image: url(img/header/3.jpg)"
+            >
+              <div class="blur-image d-none" id="research-item">
+                <div class="description">
+                  <h5 class="mb-1">RED Research – Q1, 2021</h5>
+                  <span>Report generation with metadata analytics</span>
+                </div>
+              </div>
+              <div class="blur-image d-none" id="mass-item">
+                <div class="description">
+                  <h5 class="mb-1">RED MaSS – Q2, 2021</h5>
+                  <span>Data Management and Software Solutions</span>
+                </div>
+              </div>
+              <div class="blur-image d-none" id="api-item">
+                <div class="description">
+                  <h5 class="mb-1">RED API – Q3, 2021</h5>
+                  <span>Application programing interface</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 mt-10"></div>
+          <div class="col-lg-5 col-md-6 col-sm-8 col-xs-10">
+            <h4 class="mb-1 sub-title">Consumer</h4>
+            <div>
+              <div class="btn-outline mb-2" id="list">
                 <h5 class="title-section-services">
                   <span class="color-red">RED</span> List – Q3, 2021
                 </h5>
-                <p class="color-gray">
-                  A publicly available multiple listing service
-                </p>
               </div>
-              <div class="col-lg-4 col-md-4">
+              <div class="btn-outline mb-2" id="access">
                 <h5 class="title-section-services">
                   <span class="color-red">RED</span> Access – Q3, 2021
                 </h5>
-                <p class="color-gray">
-                  A subscription-based data aggregation platform
-                </p>
               </div>
-              <div class="col-lg-4 col-md-4">
+              <div class="btn-outline" id="x">
                 <h5 class="title-section-services">
                   <span class="color-red">RED</span> X – Q4, 2021
                 </h5>
-                <p class="color-gray">
-                  A third-party real estate data marketplace
-                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-lg-offset-1 col-md-6 col-sm-8 col-xs-10 mt-md-40 text-center"
+          >
+            <div
+              class="btn-image"
+              style="background-image: url(img/header/3.jpg)"
+            >
+              <div class="blur-image d-none" id="list-item">
+                <div class="description">
+                  <h5 class="mb-1">RED List – Q3, 2021</h5>
+                  <span>A publicly available multiple listing service </span>
+                </div>
+              </div>
+              <div class="blur-image d-none" id="access-item">
+                <div class="description">
+                  <h5 class="mb-1">RED Access – Q3, 2021</h5>
+                  <span>A subscription-based data aggregation platform </span>
+                </div>
+              </div>
+              <div class="blur-image d-none" id="x-item">
+                <div class="description">
+                  <h5 class="mb-1">RED X – Q4, 2021</h5>
+                  <span>A third-party real estate data marketplace </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Services Section-->
     <section id="investors" class="bg-img4">
       <div class="overlay"></div>
       <div class="container">
         <div data-wow-delay=".5s" class="row img-investors-md-none wow fadeIn">
-          <div class="col-lg-5 col-md-6 col-sm-8 col-xs-10">
+          <div class="col-lg-6 col-md-6 col-sm-8 col-xs-10">
             <h3>Investors</h3>
             <p>
               It is our pleasure to offer potential investors the opportunity to
@@ -202,11 +246,9 @@
                 >investors@atlas.red</a
               >
             </p>
-            <a
-              href="https://themeforest.net/item/universal-smart-multipurpose-html5-template/17268942"
-              class="btn btn-red"
-              >Download Deck</a
-            >
+            <div class="d-flex justify-content-center">
+              <a href="#" class="btn btn-red">Download Deck</a>
+            </div>
           </div>
           <div
             class="col-lg-6 col-lg-offset-1 col-md-6 col-sm-8 col-xs-10 mt-md-40"
@@ -232,13 +274,11 @@
               <div class="control-group col-lg-4 col-md-4 col-sm-6">
                 <div class="form-group floating-label-form-group controls">
                   <h5 class="title-section-services">First name</h5>
-                  <label for="name" class="sr-only control-label"
-                    >You Name</label
-                  >
+                  <label for="name" class="sr-only control-label">Name</label>
                   <input
                     id="name"
                     type="text"
-                    placeholder="You Name"
+                    placeholder="Name"
                     required="true"
                     data-validation-required-message="Please enter name"
                     class="form-control input-lg"
@@ -247,12 +287,12 @@
                 <div class="form-group floating-label-form-group controls">
                   <h5 class="title-section-services">Last name</h5>
                   <label for="lastname" class="sr-only control-label"
-                    >You Last name</label
+                    >Last name</label
                   >
                   <input
                     id="lastname"
                     type="text"
-                    placeholder="You Last name"
+                    placeholder="Last name"
                     required="true"
                     data-validation-required-message="Please enter last name"
                     class="form-control input-lg"
@@ -276,13 +316,11 @@
                 </div>
                 <div class="form-group floating-label-form-group controls">
                   <h5 class="title-section-services">Contact Email</h5>
-                  <label for="email" class="sr-only control-label"
-                    >You Email</label
-                  >
+                  <label for="email" class="sr-only control-label">Email</label>
                   <input
                     id="email"
                     type="email"
-                    placeholder="You Email"
+                    placeholder="Email"
                     required="true"
                     data-validation-required-message="Please enter email"
                     class="form-control input-lg"
@@ -294,13 +332,11 @@
                   <h5 class="title-section-services">
                     Contact Phone (Optional)
                   </h5>
-                  <label for="phone" class="sr-only control-label"
-                    >You Phone</label
-                  >
+                  <label for="phone" class="sr-only control-label">Phone</label>
                   <input
                     id="phone"
                     type="tel"
-                    placeholder="You Phone"
+                    placeholder="Phone"
                     class="form-control input-lg"
                   /><span class="help-block text-danger"></span>
                 </div>
@@ -373,6 +409,15 @@
     <script src="js/jquery.swipebox.min.js"></script>
     <script src="js/smoothscroll.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3E86i8mx1BZDlAaLcknh_mWl4F70i4os"></script>
+    <script src="js/map.js"></script>
+    <!-- Youtube video background--><a
+      id="bgndVideo"
+      data-property="{videoURL:'https://www.youtube.com/watch?v=KgM-KWs9K8c', containment:'.introvideo', autoPlay:true, loop:true, mute:true, startAt:66, stopAt: 82, quality:'default', opacity:1, showControls: false, showYTLogo:false, vol:25}"
+      class="player"
+    ></a>
+    <script src="js/jquery.mb.YTPlayer.js"></script>
     <!-- Custom Theme JavaScript-->
     <script src="js/universal.js"></script>
     <!--[if lt IE 9]>
