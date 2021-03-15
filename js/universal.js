@@ -281,6 +281,19 @@
     });
 
     /***********************************************
+     * Modal Message
+     ***********************************************/
+    var href = window.location.href;
+    var lastIndexOf = href.substring(href.lastIndexOf("#") + 1);
+    if (lastIndexOf === "sent") {
+      $(".modal-message").addClass("d-flex");
+      $(".modal-message").removeClass("d-none");
+    }
+    $("#acceptModalMessage").on("click", function (e) {
+      $(".modal-message").addClass("d-none");
+    });
+
+    /***********************************************
      * Services
      ***********************************************/
 
