@@ -511,7 +511,7 @@ a .fa:hover {
   font-weight: 800;
   letter-spacing: -0.01em;
   text-transform: none;
-  padding: 17px 5px 12px 15px;
+  padding: 8px 5px 12px 15px;
 }
 .navbar-custom img {
   display: inline-block;
@@ -525,7 +525,7 @@ a .fa:hover {
 }
 .navbar-custom.top-nav-collapse .navbar-brand {
   font-size: 22px;
-  padding-top: 16px;
+  padding-top: 10px;
 }
 
 .navbar-fixed-top .container {
@@ -538,7 +538,7 @@ a .fa:hover {
   }
 }
 .navbar-custom .navbar-brand .logo {
-  max-height: 28px;
+  max-height: 40px;
   display: inline-block;
 }
 
@@ -570,7 +570,7 @@ a .fa:hover {
 
 .navbar-custom.top-nav-collapse .navbar-brand .logodark {
   max-width: 160px;
-  max-height: 28px;
+  max-height: 40px;
 }
 .navbar-custom .navbar-brand i {
   vertical-align: middle;
