@@ -57,6 +57,7 @@
             <li><a href="#about" class="page-scroll">About</a></li>
             <li><a href="#services" class="page-scroll">Services</a></li>
             <li><a href="#investors" class="page-scroll">Investors</a></li>
+            <li><a href="#team" class="page-scroll">Team</a></li>
             <li><a href="#contact" class="page-scroll">Contact</a></li>
           </ul>
         </div>
@@ -77,7 +78,7 @@
               <ul class="list-inline lead">
                 <li>
                   <a href="#contact" class="btn btn-border btn-lg page-scroll"
-                    >ACCESS DEMO</a
+                    >REQUEST DEMO</a
                   >
                 </li>
               </ul>
@@ -90,7 +91,8 @@
         <a id="video-play" href="#" class="fa fa-pause fa-lg"></a>
       </div>
     </header>
-    <!-- Slider-->
+
+    <!-- About Section-->
     <section id="about" class="section-small">
       <div class="container">
         <div class="row d-flex align-items-center img-investors-md-none">
@@ -113,16 +115,24 @@
           <div
             class="col-lg-6 col-lg-offset-1 col-md-6 col-sm-8 col-xs-10 mt-md-40"
           >
-            <img
-              src="img/about/about.jpeg"
-              alt=""
-              class="img-responsive center-block img-borders"
-            />
+            <div
+              class="d-flex align-items-center flex-column container-play-video"
+            >
+              <div class="play-video">
+                <i class="icon icon-big ion-ios-videocam-outline"></i>
+              </div>
+              <h4 class="text-white">Watch <span class="bold">Video</span></h4>
+            </div>
+
+            <video autoplay loop muted class="wrapper__video">
+              <source src="video/about.mp4" />
+            </video>
           </div>
         </div>
       </div>
     </section>
-    <!-- About Section-->
+
+    <!-- services Section-->
     <section id="services" class="bg-gray">
       <div class="container wow fadeIn">
         <div class="row services-md-container">
@@ -150,7 +160,7 @@
             </div>
           </div>
           <div
-            class="col-lg-6 col-lg-offset-1 col-md-6 col-sm-8 col-xs-10 mt-md-40 text-center"
+            class="col-lg-6 col-lg-offset-1 col-md-6 col-sm-8 col-xs-10 mt-md-40 text-center mb-6"
           >
             <div
               class="btn-image"
@@ -228,7 +238,7 @@
       </div>
     </section>
 
-    <!-- Services Section-->
+    <!-- Investors Section-->
     <section id="investors" class="bg-img4">
       <div class="overlay"></div>
       <div class="container">
@@ -258,6 +268,50 @@
               alt=""
               class="img-responsive center-block img-borders"
             />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section-->
+    <section id="team" class="bg-white text-center">
+      <div class="container">
+        <h3>MEET OUR LEADERS</h3>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-md-offset-125">
+            <p>
+              <img
+                src="img/team/henry.jpg"
+                alt=""
+                class="img-responsive center-block"
+              />
+            </p>
+            <h2 class="classic">Henry Keenan</h2>
+            <h6>Chief Executive Officer</h6>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <p>
+              <img
+                src="img/team/rodri.jpg"
+                alt=""
+                class="img-responsive center-block"
+              />
+            </p>
+            <h2 class="classic">Rodrigo Vidal</h2>
+
+            <h6>Chief Technology Officer</h6>
+          </div>
+          <div class="col-md-3 col-sm-6 col-md-offset-0 col-sm-offset-3">
+            <p>
+              <img
+                src="img/team/husam.jpg"
+                alt=""
+                class="img-responsive center-block"
+              />
+            </p>
+            <h2 class="classic">Husam Amer</h2>
+
+            <h6>VP Global Business Development</h6>
           </div>
         </div>
       </div>
@@ -369,6 +423,7 @@
         </div>
       </div>
     </section>
+
     <!-- Footer Section-->
     <section class="section-small footer bg-gray">
       <div class="container">
@@ -409,6 +464,16 @@
         </div>
       </div>
     </div>
+
+    <!-- Full video-->
+    <div class="modal-video d-none" id="fullVideo">
+      <div class="row d-flex justify-content-center">
+        <i class="icon icon-medium ion-ios-close-outline icon-close-video"></i>
+        <video controls loop class="container-full-video" id="videoControls">
+          <source src="video/about.mp4" />
+        </video>
+      </div>
+    </div>
     <!-- jQuery-->
     <script src="js/jquery-1.12.4.min.js"></script>
     <!-- Bootstrap Core JavaScript-->
@@ -425,10 +490,8 @@
     <script src="js/jquery.swipebox.min.js"></script>
     <script src="js/smoothscroll.min.js"></script>
     <script src="js/wow.min.js"></script>
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3E86i8mx1BZDlAaLcknh_mWl4F70i4os"></script>
-    <script src="js/map.js"></script>
-    <!-- Youtube video background--><a
+
+    Youtube video background<a
       id="bgndVideo"
       data-property="{videoURL:'https://www.youtube.com/watch?v=KgM-KWs9K8c', containment:'.introvideo', autoPlay:true, loop:true, mute:true, startAt:66, stopAt: 82, quality:'default', opacity:1, showControls: false, showYTLogo:false, vol:25}"
       class="player"

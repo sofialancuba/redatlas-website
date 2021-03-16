@@ -437,6 +437,21 @@ a .icon {
   display: block;
 }
 
+.icon-medium {
+  font-size: 50px;
+  line-height: 120px;
+  display: block;
+}
+
+.icon-close-video {
+  position: absolute;
+  top: -24px;
+  right: 15px;
+  z-index: 5;
+  color: #fff;
+  cursor: pointer;
+}
+
 #services-construction .icon-big {
   color: #d4c787;
 }
@@ -451,7 +466,7 @@ header .icon-big {
 
 .classic,
 .classic2 {
-  font-family: "Caveat";
+  font-family: "Caveat" !important;
   font-weight: normal !important;
   text-transform: capitalize;
   letter-spacing: 0;
@@ -1579,7 +1594,7 @@ input[type="radio"] {
 
 /* Team */
 #team h2 {
-  margin-top: -40px !important;
+  margin-top: -12px !important;
   padding-bottom: 0 !important;
 }
 #team p {
@@ -2823,6 +2838,9 @@ li .shop-cart a:hover {
 .mb-2 {
   margin-bottom: 2rem;
 }
+.mb-6 {
+  margin-bottom: 6rem;
+}
 .d-none {
   display: none !important;
 }
@@ -2847,7 +2865,8 @@ li .shop-cart a:hover {
   }
 }
 
-.modal-message {
+.modal-message,
+.modal-video {
   position: fixed;
   top: 0;
   right: 0;
@@ -2868,9 +2887,63 @@ li .shop-cart a:hover {
   display: flex;
 }
 
+.wrapper__video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.container-play-video {
+  position: absolute;
+  background: #0000008a;
+  width: calc(100% - 30px);
+  height: calc(100% - 9px);
+  border-radius: 0.5rem;
+}
+
+.play-video {
+  cursor: pointer;
+  z-index: 3;
+  color: #fff;
+  margin-top: 29px;
+}
+
+.play-video:hover {
+  color: #b6b6b6;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.container-full-video {
+  width: 100%;
+  height: 100vh;
+}
+
 @media (max-width: 767px) {
   .row-custom {
     margin-left: 15px !important;
     margin-right: 15px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-offset-125 {
+    margin-left: 12.5%;
+  }
+}
+
+@media (max-width: 499px) {
+  .play-video {
+    margin-top: 0;
+  }
+  .play-video .icon-big {
+    line-height: 100px;
   }
 }

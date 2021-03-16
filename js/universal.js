@@ -294,6 +294,22 @@
     });
 
     /***********************************************
+     * Video
+     ***********************************************/
+    $(".play-video").on("click", function (e) {
+      $("#fullVideo").removeClass("d-none");
+      $("#videoControls").get(0).play();
+    });
+
+    $(".icon-close-video").on("click", function (e) {
+      $("#fullVideo").addClass("d-none");
+      $("#videoControls").trigger("pause");
+      setTimeout(function () {
+        $("#videoControls").get(0).currentTime = 0;
+      });
+    });
+
+    /***********************************************
      * Services
      ***********************************************/
 
