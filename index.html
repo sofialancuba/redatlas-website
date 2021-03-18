@@ -119,18 +119,20 @@
           <div
             class="col-lg-6 col-lg-offset-1 col-md-6 col-sm-8 col-xs-10 mt-md-40"
           >
-            <div
+            <!-- <div
               class="d-flex align-items-center flex-column container-play-video"
             >
               <div class="play-video">
                 <i class="icon icon-big ion-ios-videocam-outline"></i>
               </div>
               <h4 class="text-white">Watch <span class="bold">Video</span></h4>
-            </div>
+            </div> -->
 
-            <video autoplay loop muted class="wrapper__video">
+            <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/GuRV1ZhFU1g?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 0.5rem"></iframe>
+
+            <!-- <video autoplay loop muted class="wrapper__video">
               <source src="video/about.mp4" />
-            </video>
+            </video> -->
           </div>
         </div>
       </div>
@@ -261,7 +263,9 @@
               >
             </p>
             <div class="d-flex justify-content-center">
-              <a href="#contact" class="btn btn-red page-scroll">Download Deck</a>
+              <a href="#contact" class="btn btn-red page-scroll"
+                >Download Deck</a
+              >
             </div>
           </div>
           <div
@@ -281,8 +285,8 @@
     <section id="team" class="bg-white text-center">
       <div class="container">
         <h3>MEET OUR LEADERS</h3>
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-md-offset-125">
+        <div class="row row-team-xs">
+          <div class="col-xs-8 col-md-3 col-sm-6 col-md-offset-125">
             <p>
               <img
                 src="img/team/henry.jpg"
@@ -290,10 +294,10 @@
                 class="img-responsive center-block"
               />
             </p>
-            <h2 class="classic">Henry Keenan</h2>
+            <h4 class="mb-1">Henry Keenan</h4>
             <h6>Chief Executive Officer</h6>
           </div>
-          <div class="col-md-3 col-sm-6">
+          <div class="col-xs-8 col-md-3 col-sm-6">
             <p>
               <img
                 src="img/team/rodri.jpg"
@@ -301,11 +305,11 @@
                 class="img-responsive center-block"
               />
             </p>
-            <h2 class="classic">Rodrigo Vidal</h2>
+            <h4 class="mb-1">Rodrigo Vidal</h2>
 
             <h6>Chief Technology Officer</h6>
           </div>
-          <div class="col-md-3 col-sm-6 col-md-offset-0 col-sm-offset-3">
+          <div class="col-xs-8 col-md-3 col-sm-6 col-md-offset-0 col-sm-offset-3">
             <p>
               <img
                 src="img/team/husam.jpg"
@@ -313,7 +317,7 @@
                 class="img-responsive center-block"
               />
             </p>
-            <h2 class="classic">Husam Amer</h2>
+            <h4 class="mb-1">Husam Amer</h2>
 
             <h6>VP Global Business Development</h6>
           </div>
@@ -327,7 +331,13 @@
         <div class="row">
           <div class="col-md-12">
             <h3>Contact us</h3>
-            <form action="mail.php" name="sentMessage" novalidate="" class="row" method="POST">
+            <form
+              action="mail.php"
+              name="sentMessage"
+              novalidate=""
+              class="row"
+              method="POST"
+            >
               <div class="control-group col-lg-4 col-md-4 col-sm-6">
                 <div class="form-group floating-label-form-group controls">
                   <h5 class="title-section-services">First name</h5>
@@ -474,14 +484,14 @@
     </div>
 
     <!-- Full video-->
-    <div class="modal-video d-none" id="fullVideo">
+    <!-- <div class="modal-video d-none" id="fullVideo">
       <div class="row d-flex justify-content-center">
         <i class="icon icon-medium ion-ios-close-outline icon-close-video"></i>
         <video controls loop class="container-full-video" id="videoControls">
           <source src="video/about.mp4" />
         </video>
       </div>
-    </div>
+    </div> -->
     <!-- jQuery-->
     <script src="js/jquery-1.12.4.min.js"></script>
     <!-- Bootstrap Core JavaScript-->

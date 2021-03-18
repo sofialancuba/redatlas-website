@@ -2623,6 +2623,11 @@ li .shop-cart a:hover {
   .footer .text-right {
     text-align: center !important;
   }
+  .row-team-xs {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
 }
 /* Stop animation on mobile devices */
 @media (max-width: 800px) {
