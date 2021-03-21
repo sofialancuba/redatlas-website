@@ -1604,7 +1604,7 @@ input[type="radio"] {
   margin: 0;
 }
 #team img {
-  border-radius: 50%;
+  border-radius: 9%;
 }
 
 /* Contact */
