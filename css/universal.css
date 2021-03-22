@@ -291,6 +291,12 @@ section,
   padding-bottom: 80px;
 }
 
+.section-footer {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .list-inline > li {
   padding-bottom: 10px;
   vertical-align: bottom;
@@ -1773,19 +1779,19 @@ blockquote:after {
 }
 
 .carousel-indicators .active {
-  width: 16px;
-  height: 16px;
+  width: 10px;
+  height: 10px;
   margin: 0 5px 0;
 }
 .carousel-indicators li {
-  width: 16px;
-  height: 16px;
+  width: 10px;
+  height: 10px;
   margin: 0 5px 0;
-  background-color: #666;
+  background-color: #999;
   border: 0;
 }
 .carousel-indicators .active {
-  background-color: #999;
+  background-color: #d31216;
 }
 
 .carousel-control .icon-next,

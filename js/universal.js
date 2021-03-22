@@ -343,11 +343,6 @@
     };
     $("#api").click(apiHoverOrClick).hover(apiHoverOrClick);
 
-    // $("#research").mouseover(function(){
-    //     $("#research").removeClass("btn-outline-red");
-    //   $("#research-item").removeClass("d-none");
-    // })
-
     var listHoverOrClick = function () {
       $("#list").addClass("btn-outline-red");
       $("#list-item").removeClass("d-none");
@@ -377,6 +372,19 @@
       $("#access").removeClass("btn-outline-red");
     };
     $("#x").click(xHoverOrClick).hover(xHoverOrClick);
+
+    /***********************************************
+     * Select (option selected)
+     ***********************************************/
+    $(".contactSelected").on("click", function (e) {
+      $("#subject option[value=subscribe]").prop("selected", true);
+    });
+    $(".requestDemo").on("click", function (e) {
+      $("#subject option[value=request_demo]").prop("selected", true);
+    });
+    $(".requestDeck").on("click", function (e) {
+      $("#subject option[value=request_deck]").prop("selected", true);
+    });
 
     /***********************************************
      *  Swipe box

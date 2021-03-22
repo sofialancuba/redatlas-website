@@ -26,6 +26,7 @@ $email = $_POST['email'];
 $msg =
 'Name:	'.$_POST['first_name']. ' ' . $_POST['last_name'] . '<br />
 Email:	'.$_POST['email'].'<br />
+Subject: '.$_POST['subject'].'<br />
 Organization:	'.$_POST['organization'].'<br />
 Phone number:	'.$_POST['phone'].'<br />
 
@@ -54,7 +55,7 @@ if ($smtp) {
 
 $mail->Timeout = 360;
 
-$mail->Subject = "New message from " . $_POST['first_name'] . " " . $_POST['last_name'] ." | in atlas.red";
+$mail->Subject = $_POST['subject'] ." | in atlas.red";
 $from = $_POST['first_name'] . " " . $_POST['last_name'];
 $mail->From = $email;
 $mail->FromName = $_POST['first_name'] . " " . $_POST['last_name'];
@@ -73,6 +74,7 @@ $fecha = new DateTime();
 $msgTxt=
     'Name: '.$_POST['first_name'] . " " . $_POST['last_name'].'
 Email: '.$_POST['email'].'
+Subject: '.$_POST['subject'].'
 Organization: '.$_POST['organization'].'
 Phone: '.$_POST['phone'].'
 Message:
