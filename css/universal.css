@@ -47,6 +47,11 @@ Table of contents
 -------------------------------------------------------------------*/
 /* Fonts */
 @import "https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900|Roboto+Mono:100,400|Caveat";
+@font-face {
+  font-family: SansationBold;
+  src: url(../fonts/Sansation_Bold.ttf);
+}
+
 /* Plugins */
 @import url(../js/vegas/vegas.min.css);
 @import url(ionicons.min.css);
@@ -2957,4 +2962,8 @@ li .shop-cart a:hover {
   .play-video .icon-big {
     line-height: 100px;
   }
+}
+
+.sansation-bold {
+  font-family: SansationBold, serif;
 }
