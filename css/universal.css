@@ -47,17 +47,17 @@ Table of contents
 -------------------------------------------------------------------*/
 /* Fonts */
 @import "https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900|Roboto+Mono:100,400|Caveat";
-@font-face {
-  font-family: SansationBold;
-  src: url(../fonts/Sansation_Bold.ttf);
-}
-
-/* Plugins */
 @import url(../js/vegas/vegas.min.css);
 @import url(ionicons.min.css);
 @import url(font-awesome.min.css);
 @import url(animate.min.css);
 @import url(swipebox.css);
+
+@font-face {
+  font-family: SansationBold;
+  src: url(../fonts/Sansation_Bold.ttf);
+}
+
 /* Base structure */
 html {
   width: 100% !important;
