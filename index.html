@@ -487,11 +487,11 @@
           <div class="col-md-12">
             <h3 class="text-center">Contact us</h3>
             <form
-              action="mail.php"
+              id="form_contact"
+              onsubmit="return sendForm()"
+              action=""
               name="sentMessage"
-              novalidate=""
               class="row"
-              method="POST"
             >
               <div class="control-group col-lg-4 col-md-4 col-sm-6">
                 <div class="form-group floating-label-form-group controls">
@@ -535,7 +535,7 @@
                   >
                   <input
                     id="organization"
-                    name="organization"
+                    name="company"
                     type="text"
                     placeholder="Organization"
                     class="form-control input-lg"

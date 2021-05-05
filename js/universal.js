@@ -623,3 +623,25 @@
     shuffleme.init(); //filter portfolio
   });
 })(jQuery);
+
+/***********************************************
+ * Send form
+ ***********************************************/
+function sendForm() {
+  $.ajax({
+    type: "POST",
+    url: "https://api.atlas.red/api/contact",
+    cache: false,
+    data: $("#form_contact").serialize(),
+    error: function (e) {
+      setTimeout(function () {
+        window.location.href = 'https://atlas.red/#sent';
+      }, 1000)
+    }
+  }).done(function (h) {
+    setTimeout(function () {
+      window.location.href = 'https://atlas.red/#sent';
+    }, 1000)
+  });
+  return false;
+}
