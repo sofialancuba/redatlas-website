@@ -634,12 +634,12 @@ function sendForm() {
     cache: false,
     data: $("#form_contact").serialize(),
     error: function (e) {
-      window.location.href = 'https://atlas.red/#sent';
-      location.reload(true);
+      $(".modal-message").addClass("d-flex");
+      $(".modal-message").removeClass("d-none");
     }
   }).done(function (h) {
-    window.location.href = 'https://atlas.red/#sent';
-    location.reload(true);
+    $(".modal-message").addClass("d-flex");
+    $(".modal-message").removeClass("d-none");
   });
   return false;
 }
