@@ -635,9 +635,11 @@ function sendForm() {
     data: $("#form_contact").serialize(),
     error: function (e) {
       window.location.href = 'https://atlas.red/#sent';
+      location.reload(true);
     }
   }).done(function (h) {
     window.location.href = 'https://atlas.red/#sent';
+    location.reload(true);
   });
   return false;
 }
