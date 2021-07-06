@@ -2967,3 +2967,9 @@ li .shop-cart a:hover {
 .sansation-bold {
   font-family: SansationBold, serif;
 }
+
+.brochure-in-services {
+  float: right;
+  padding: 4px!important;
+  font-size: 11px!important;
+}
