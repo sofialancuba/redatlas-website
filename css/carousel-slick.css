@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background: #003230;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.title {
+  margin-bottom: 50px;
+  font-size: 1.5em;
+}
+
+.carousel-wrap {
+  padding: 0 5%;
+  width: 90%;
+  position: relative;
+}
+.owl-carousel .item {
+  margin: 0 18px 30px 18px;
+  position: relative;
+  box-shadow: 6px 14px 15px #111;
+}

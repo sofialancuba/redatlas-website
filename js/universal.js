@@ -636,7 +636,7 @@ function sendForm() {
     error: function (e) {
       $(".modal-message").addClass("d-flex");
       $(".modal-message").removeClass("d-none");
-    }
+    },
   }).done(function (h) {
     $(".modal-message").addClass("d-flex");
     $(".modal-message").removeClass("d-none");

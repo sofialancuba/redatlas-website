@@ -48,7 +48,7 @@ Table of contents
 -------------------------------------------------------------------*/
 
 /* Fonts */
-@import "https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900|Roboto+Mono:100,400|Caveat";
+@import "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap";
 
 /* Plugins */
 @import "../js/vegas/vegas.min.css";
@@ -66,8 +66,8 @@ html {
 body {
   width: 100% !important;
   height: 100% !important;
-  font: normal 15px/1.8 Raleway, sans-serif;
-  letter-spacing: 0.03em;
+  font: normal 15px/1.8 Lato, sans-serif;
+  // letter-spacing: 0.03em;
   color: #444;
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
@@ -176,8 +176,8 @@ h4,
 h5,
 h6 {
   margin: 0 0 35px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+  /* text-transform: uppercase; */
+  // letter-spacing: 0.1em;
   line-height: 1.7;
   font-weight: 800;
 }
@@ -246,7 +246,7 @@ a {
 }
 
 .overlay {
-  background: rgba(7, 9, 21, 0.7);
+  background: rgba(7, 9, 21, 0.5);
 }
 
 .overlay-gray {
@@ -302,8 +302,8 @@ section,
 
 .section-small {
   position: relative;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .list-inline > li {
@@ -315,7 +315,6 @@ section,
 input,
 .btn,
 textarea,
-.dropdown-menu,
 .panel,
 .progress,
 .list-group-item,
@@ -342,9 +341,9 @@ select {
 /* Buttons */
 .btn {
   font-size: 12px !important;
-  letter-spacing: 2px;
+  // letter-spacing: 2px;
   outline: 0;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -463,7 +462,7 @@ header .icon-big {
   font-family: "Caveat";
   font-weight: normal !important;
   text-transform: capitalize;
-  letter-spacing: 0;
+  // letter-spacing: 0;
   margin: 0 0 15px;
   transform: rotate(-3deg) !important;
   -moz-transform: rotate(-3deg) !important;
@@ -509,7 +508,7 @@ a .fa {
 .navbar-custom {
   margin-bottom: 0;
   border-bottom: transparent;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: rgba(0, 0, 0, 0.9);
   -webkit-transition: all 0.8s ease;
   -moz-transition: all 0.8s ease;
@@ -517,7 +516,7 @@ a .fa {
   .navbar-brand {
     font-size: 32px;
     font-weight: 800;
-    letter-spacing: -0.01em;
+    // letter-spacing: -0.01em;
     text-transform: none;
     padding: 17px 5px 12px 15px;
   }
@@ -541,11 +540,11 @@ a .fa {
   width: auto;
 }
 
-@media (min-width: 1200px) {
-  .top-nav-collapse .container {
-    width: 1170px !important;
-  }
-}
+// @media (min-width: 1200px) {
+//   .top-nav-collapse .container {
+//     width: 1170px !important;
+//   }
+// }
 
 .navbar-custom .navbar-brand .logo {
   max-height: 28px;
@@ -599,18 +598,18 @@ a .fa {
 }
 
 .nav > li > a {
-  padding: 21px 13px 15px;
+  padding: 22px;
 }
 
 .navbar-custom {
   a {
     color: #fff;
-    font-family: "Raleway", sans-serif;
+    font-family: "Lato", sans-serif;
     font-size: 13px;
     font-weight: 700;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-decoration: none;
-    letter-spacing: 1px;
+    // letter-spacing: 1px;
   }
   .nav {
     li a {
@@ -653,7 +652,7 @@ a .fa {
   border: 0;
   > {
     li > a {
-      font-size: 12px;
+      font-size: 15px;
       font-weight: 600;
       padding: 12px 18px;
       white-space: nowrap;
@@ -951,7 +950,7 @@ a.btn-nav .btn {
   .navbar-custom {
     padding: 30px;
     border-bottom: 0;
-    letter-spacing: 1px;
+    // letter-spacing: 1px;
     background: 0 0;
     background: transparent;
     &.top-nav-collapse {
@@ -1267,7 +1266,7 @@ a.btn-nav .btn {
 /* Intro */
 .intro {
   display: table;
-  text-align: center;
+  // text-align: center;
   width: 100%;
   color: #fff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -1293,7 +1292,8 @@ a.btn-nav .btn {
   height: auto !important;
 }
 
-.intro .intro-body {
+.intro .intro-body,
+.intro .intro-body-bg {
   display: table-cell;
   vertical-align: middle;
   padding: 150px 0 50px;
@@ -1308,7 +1308,7 @@ a.btn-nav .btn {
     margin: -9px -14px;
     line-height: 1;
     text-shadow: none;
-    letter-spacing: 1px;
+    // letter-spacing: 1px;
     border-radius: 50% !important;
     width: 45px;
     height: 45px;
@@ -1342,12 +1342,12 @@ a.btn-nav .btn {
   .intro-body .brand-heading {
     font-size: 40px;
     font-weight: 800;
-    letter-spacing: -2px;
+    // letter-spacing: -2px;
     margin: 0 0 5px;
   }
   h1 {
-    font-size: 60px;
-    font-weight: 900;
+    font-size: 50px;
+    font-weight: normal;
     line-height: 80px;
     &.classic {
       font-size: 100px;
@@ -1566,8 +1566,8 @@ input {
     display: inline-block;
     font-size: 12px;
     margin: 0 15px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    /* text-transform: uppercase; */
+    // letter-spacing: 2px;
     line-height: 60px;
   }
   span {
@@ -1757,7 +1757,7 @@ blockquote {
   &:hover {
     color: #000;
     text-shadow: 0 0 2px rgba(255, 255, 255, 0.9);
-    opacity: 0.5;
+    // opacity: 0.5;
   }
   &.left,
   &.right {
@@ -1773,7 +1773,7 @@ blockquote {
   &:hover {
     color: #fff;
     text-shadow: 0 0 2px rgba(255, 255, 255, 0.9);
-    opacity: 0.5;
+    // opacity: 0.5;
   }
 }
 
@@ -1832,6 +1832,7 @@ blockquote {
 
 .carousel-indicators {
   bottom: -60px;
+  width: 100%;
 }
 
 .indicators-inside {
@@ -1900,7 +1901,7 @@ blockquote {
   }
   .icon-prev:before {
     font-family: "ionicons";
-    content: "\f3d2";
+    content: "\f3cf";
   }
 }
 
@@ -2075,7 +2076,7 @@ blockquote {
   font-weight: 100;
   font-size: 50px;
   line-height: 90px;
-  letter-spacing: 10px;
+  // letter-spacing: 10px;
 }
 
 /* Testimonials */
@@ -2097,13 +2098,13 @@ blockquote {
 
 /*  Portfolio  */
 .portfolio-sorting {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin-bottom: 48px;
   li a {
     color: #888;
     text-decoration: none;
     margin: 10px;
-    letter-spacing: 2px;
+    // letter-spacing: 2px;
     font-weight: 600;
   }
   a {
@@ -2397,7 +2398,7 @@ section.bg-dark2 .fa {
   padding-top: 38px;
   span {
     font-family: "Roboto Mono", sans-serif;
-    letter-spacing: -1px;
+    // letter-spacing: -1px;
   }
   canvas {
     display: block;
@@ -2506,19 +2507,19 @@ li .shop-cart {
     top: 30px;
     background-color: #789;
     color: #fff;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
   }
   &.trend {
     top: 30px;
     background-color: #c00;
     color: #fff;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
   }
   &.new {
     top: 30px;
     background-color: #ff4081;
     color: #fff;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
   }
 }
 
@@ -2592,9 +2593,9 @@ li .shop-cart {
 
 /* Media Queries */
 @media (max-width: 768px) {
-  body {
-    letter-spacing: 0;
-  }
+  // body {
+  //   letter-spacing: 0;
+  // }
   .h4,
   h4 {
     font-size: 16px;
@@ -2627,12 +2628,12 @@ li .shop-cart {
     padding-bottom: 80px;
   }
   .section-small {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .portfolio-sorting li a {
     margin: 0;
-    letter-spacing: 0;
+    // letter-spacing: 0;
   }
   .shop-item img {
     width: 100%;
@@ -2803,7 +2804,7 @@ li .shop-cart {
     right: 20px;
     margin: -24px -14px;
     line-height: 1;
-    letter-spacing: 1px;
+    // letter-spacing: 1px;
     border-radius: 50% !important;
     width: 40px;
     height: 40px;
