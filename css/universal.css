@@ -246,6 +246,36 @@ a img:hover {
     rgba(255, 255, 255, 0) 100%
   );
 }
+.overlay-degraded-white {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 40%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.icon-input {
+  padding: 10px;
+  min-width: 40px;
+}
+
+.input-field-icon {
+  width: 100%;
+  padding: 10px;
+  padding-left: 35px !important;
+  padding-right: 10px !important;
+  border: 1px solid #fff !important;
+  border-radius: 2rem !important;
+}
 .overlay-blur {
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(15px);
@@ -267,6 +297,7 @@ a img:hover {
 }
 .overlay,
 .overlay-degraded,
+.overlay-degraded-white,
 .overlay-gray,
 .overlay-white {
   width: 100%;
@@ -1014,7 +1045,7 @@ a.btn-nav .btn {
   .search-form input {
     background: transparent;
     border: 0;
-    width: 200px;
+    width: 300px;
   }
   .d-none-lg {
     display: none !important;
@@ -2989,6 +3020,9 @@ li .shop-cart a:hover {
 .mb-1 {
   margin-bottom: 1rem;
 }
+.mb-05 {
+  margin-bottom: 0.5rem !important;
+}
 
 .img-service {
   height: 200px;
@@ -3398,6 +3432,12 @@ li .shop-cart a:hover {
 }
 .color-black {
   color: #1d1d1b;
+}
+.border-bottom-black {
+  border-bottom: 1px solid #1d1d1b;
+}
+.pb-1 {
+  padding-bottom: 1rem;
 }
 .p-30 {
   padding: 30px;
