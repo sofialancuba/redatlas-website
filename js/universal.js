@@ -135,7 +135,7 @@
      ***********************************************/
 
     $(".navbar-onepage .navbar-collapse ul li a").on("click", function () {
-      $(".navbar-onepage .navbar-toggle:visible").click();
+      $(".navbar-onepage .navbar-collapse").toggleClass("in");
     });
 
     /***********************************************

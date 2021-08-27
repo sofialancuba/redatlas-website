@@ -36,16 +36,25 @@
           <div class="nav-lg-flex">
             <ul class="nav navbar-nav menu-navbar d-flex align-items-center">
               <li>
-                <div class="btn-pill btn-red d-flex align-items-center">
-                  <a href="https://app.atlas.red/" target="_blank"
-                    >Go to the app</a
+                <div class="d-flex align-items-center">
+                  <a
+                    href="research-general.html"
+                    class="
+                      cursor-pointer
+                      btn-pill btn-red
+                      d-flex
+                      align-items-center
+                      justify-content-center
+                    "
                   >
+                    <div>Go to the app</div>
+                  </a>
                 </div>
               </li>
-              <li>
+              <!-- <li>
                 <a href="#solutions" class="page-scroll">Solutions</a>
               </li>
-              <li><a href="#research" class="page-scroll">Research</a></li>
+              <li><a href="#research" class="page-scroll">Research</a></li> -->
             </ul>
             <ul class="nav navbar-nav menu-navbar">
               <!-- Hidden li included to remove active class from about link when scrolled up past about section-->
@@ -68,7 +77,13 @@
         </div>
       </div>
     </nav>
-    <nav class="navbar navbar-custom navbar-fixed-top top-nav-collapse">
+    <nav
+      class="
+        navbar navbar-custom navbar-fixed-top
+        top-nav-collapse
+        navbar-onepage
+      "
+    >
       <div class="container">
         <div class="navbar-header" style="margin-left: 13px">
           <button
@@ -83,7 +98,7 @@
             <span class="icon-bar"></span>
           </button>
           <div class="logo-mobile">
-            <a href="#page-top" class="navbar-brand page-scroll pl-0">
+            <a href="index.html" class="navbar-brand page-scroll pl-0">
               <!-- Text or Image logo--><img
                 src="img/logo.png"
                 alt="Logo"
@@ -93,15 +108,61 @@
         </div>
         <!-- Collect the nav links, forms, and other content for toggling-->
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-          <ul class="nav navbar-nav d-flex align-items-center">
+          <div class="nav-lg-flex d-none-lg">
+            <ul class="nav navbar-nav menu-navbar">
+              <!-- Hidden li included to remove active class from about link when scrolled up past about section-->
+
+              <li><a href="careers.html" class="page-scroll">Careers</a></li>
+              <li><a href="about.html" class="page-scroll">About us</a></li>
+              <li>
+                <a href="directory.html" class="page-scroll">Directory</a>
+              </li>
+              <li>
+                <a href="investors.html" class="page-scroll">Investors</a>
+              </li>
+              <li>
+                <a href="contact.html" class="page-scroll contactSelected pr-0"
+                  >Contact</a
+                >
+              </li>
+              <br />
+              <li class="d-flex">
+                <a
+                  href="https://app.atlas.red/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="border-bottom: none !important"
+                >
+                  <button
+                    href="https://app.atlas.red/"
+                    target="_blank"
+                    class="btn-pill btn-red"
+                  >
+                    Go to the app
+                  </button>
+                </a>
+              </li>
+              <!-- <li>
+                <a href="#solutions" class="page-scroll">Solutions</a>
+              </li>
+              <li><a href="#research" class="page-scroll">Research</a></li> -->
+            </ul>
+          </div>
+          <ul class="nav navbar-nav d-flex-lg align-items-center-lg">
             <!-- Hidden li included to remove active class from about link when scrolled up past about section-->
-            <li class="dropdown">
+            <li class="hidden"><a href="#page-top"></a></li>
+            <li>
               <a
-                class="dropdown-toggle d-flex align-items-center cursor-pointer"
+                class="
+                  dropdown-toggle
+                  d-flex-lg
+                  align-items-center-lg
+                  cursor-pointer
+                "
               >
                 <img src="./img/flags/pr.png" alt="flag-pr" class="flag-img" />
                 <span>Puerto Rico</span>
-                <i class="fa fa-angle-down fa-lg ml-1"></i>
+                <i class="fa fa-angle-down fa-lg ml-1 d-none-md"></i>
                 <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
@@ -118,10 +179,11 @@
               </ul>
             </li>
             <li>
-              <button class="btn-pill btn-black mr-1">Sign in</button>
-            </li>
-            <li>
-              <button class="btn-pill btn-black-outline">Sign up</button>
+              <div class="d-flex align-items-center container-buttons-sign">
+                <button class="btn-pill btn-black mr-1">Sign in</button>
+
+                <button class="btn-pill btn-black-outline">Sign up</button>
+              </div>
             </li>
           </ul>
         </div>
@@ -273,22 +335,17 @@
           class="row color-white"
           style="display: flex; justify-content: center"
         >
-          <div
-            class="col-sm-3"
-            style="
-              display: flex;
-              flex-direction: column;
-              align-items: flex-start;
-              justify-content: space-between;
-            "
-          >
-            <img src="img/logo-white.png" alt="Logo" class="logo-footer" />
+          <div class="col-sm-3 mb-sm-6 section-logo-footer">
+            <a href="index.html" class="page-scroll">
+              <img src="img/logo-white.png" alt="Logo" class="logo-footer" />
+            </a>
+
             <div>
               <p class="f-size-10 mb-0">TERMS OF SERVICE</p>
               <p class="f-size-10 mb-0">PRIVACY POLICY</p>
             </div>
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-3 mb-sm-6">
             <p class="title-footer-menu">Get in touch</p>
             <ul class="ul-list-style f-size-12">
               <li>Josefines gate 34. 0351 Oslo</li>
@@ -326,7 +383,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-3 mb-sm-6">
             <p class="title-footer-menu">JOIN OUR MAILING LIST</p>
             <form
               id="form_contact"
@@ -368,27 +425,31 @@
               <p class="title-footer-menu">EXPLORE</p>
               <ul class="ul-list-style f-size-12">
                 <li>
-                  <a href="#Carousel-intro" class="color-white page-scroll"
-                    >HOME</a
-                  >
+                  <a href="index.html" class="color-white page-scroll">HOME</a>
                 </li>
                 <li>
-                  <a href="#solutions" class="color-white page-scroll"
+                  <a
+                    href="our-solution-consumer.html"
+                    class="color-white page-scroll"
                     >SOLUTIONS</a
                   >
                 </li>
                 <li>
-                  <a href="#research" class="color-white page-scroll"
+                  <a
+                    href="research-general.html"
+                    class="color-white page-scroll"
                     >RESEARCH</a
                   >
                 </li>
-                <li>
+                <!-- <li>
                   <a href="#yourNeeds" class="color-white page-scroll"
                     >YOUR NEEDS</a
                   >
-                </li>
+                </li> -->
                 <li>
-                  <a href="#clients" class="color-white page-scroll"
+                  <a
+                    href="success-stories-general.html"
+                    class="color-white page-scroll"
                     >OUR CLIENTS</a
                   >
                 </li>
