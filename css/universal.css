@@ -2949,7 +2949,8 @@ li .shop-cart a:hover {
   .overlay-blur {
     width: 80%;
   }
-  .bg-our-solution-consumer {
+  .bg-our-solution-consumer,
+  .bg-our-solution-enterprices {
     background-position: 68% 0%;
   }
   .fill-bg {
