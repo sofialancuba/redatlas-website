@@ -2948,6 +2948,9 @@ li .shop-cart a:hover {
 }
 
 @media (max-width: 767px) {
+  .container-share {
+    max-width: 250px;
+  }
   .mb-share {
     margin-bottom: 5rem;
   }
