@@ -1240,7 +1240,8 @@ a.btn-nav .btn {
   .intro .intro-body-bg {
     padding-top: 100px !important;
   }
-  .intro-careers {
+  .intro-careers,
+  .intro-investors {
     margin-top: 78px !important;
   }
 }
@@ -1530,7 +1531,8 @@ a.btn-nav .btn {
   height: auto !important;
 }
 
-.intro-careers {
+.intro-careers,
+.intro-investors {
   margin-top: 182px;
 }
 
