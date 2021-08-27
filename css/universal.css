@@ -1173,6 +1173,11 @@ a.btn-nav .btn {
     width: 67% !important;
   }
 }
+@media (max-width: 1199px) {
+  .overlay-blur {
+    width: 60%;
+  }
+}
 @media (max-width: 1200px) {
   .intro-body:before,
   .fill-bg:before {
@@ -2941,6 +2946,12 @@ li .shop-cart a:hover {
 }
 
 @media (max-width: 767px) {
+  .overlay-blur {
+    width: 80%;
+  }
+  .bg-our-solution-consumer {
+    background-position: 68% 0%;
+  }
   .fill-bg {
     display: block;
   }
