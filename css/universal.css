@@ -1241,7 +1241,8 @@ a.btn-nav .btn {
     padding-top: 100px !important;
   }
   .intro-careers,
-  .intro-investors {
+  .intro-investors,
+  .intro-directory {
     margin-top: 78px !important;
   }
   .intro-contact {
@@ -1535,7 +1536,8 @@ a.btn-nav .btn {
 }
 
 .intro-careers,
-.intro-investors {
+.intro-investors,
+.intro-directory {
   margin-top: 182px;
 }
 .intro-contact {
@@ -2954,6 +2956,7 @@ li .shop-cart a:hover {
     align-items: center !important;
   }
 }
+
 /* Stop animation on mobile devices */
 @media (max-width: 800px) {
   .wow {
@@ -3618,7 +3621,35 @@ input:-webkit-autofill {
 /* ---------------------------------------------------------------- */
 
 .gallery-container {
-  width: 85%;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
   margin-left: auto;
   margin-bottom: 80px;
+}
+
+@media (min-width: 768px) {
+  .gallery-container {
+    width: calc(100% - (((100% - 750px) / 2) + 15px)) !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+@media (min-width: 992px) {
+  .gallery-container {
+    width: calc(100% - (((100% - 970px) / 2) + 15px)) !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery-container {
+    width: calc(100% - (((100% - 1170px) / 2) + 15px)) !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-right: 0 !important;
+  }
 }
