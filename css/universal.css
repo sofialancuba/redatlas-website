@@ -1240,6 +1240,9 @@ a.btn-nav .btn {
   .intro .intro-body-bg {
     padding-top: 100px !important;
   }
+  .intro-careers {
+    margin-top: 78px !important;
+  }
 }
 @media (max-width: 810px) {
   .col-sm-mx {
@@ -1525,6 +1528,10 @@ a.btn-nav .btn {
 
 .introhalf {
   height: auto !important;
+}
+
+.intro-careers {
+  margin-top: 182px;
 }
 
 .intro .intro-body,
