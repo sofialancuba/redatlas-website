@@ -1250,7 +1250,8 @@ a.btn-nav .btn {
   .intro-directory {
     margin-top: 78px !important;
   }
-  .intro-contact {
+  .intro-contact,
+  .intro-research-individual {
     padding-top: 150px !important;
   }
 }
@@ -1545,7 +1546,8 @@ a.btn-nav .btn {
 .intro-directory {
   margin-top: 182px;
 }
-.intro-contact {
+.intro-contact,
+.intro-research-individual {
   padding-top: 250px;
 }
 
@@ -2946,6 +2948,9 @@ li .shop-cart a:hover {
 }
 
 @media (max-width: 767px) {
+  .mb-share {
+    margin-bottom: 5rem;
+  }
   .overlay-blur {
     width: 80%;
   }
