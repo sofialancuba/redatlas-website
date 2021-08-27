@@ -12,6 +12,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom CSS-->
     <link href="css/universal.css" rel="stylesheet" />
+    <link href="css/splide.min.css" rel="stylesheet" />
+    <link href="css/carousel.css" rel="stylesheet" />
   </head>
   <body
     id="page-top"
@@ -129,32 +131,212 @@
     </nav>
 
     <!-- Intro Slider-->
-    <header class="intro" style="width: 0 !important">
+    <header
+      class="section-small"
+      style="padding-bottom: 0 !important; padding-top: 0 !important"
+    >
       <div
-        style="background-image: url('img/success-stories/general/01.png')"
-        class="fill"
+        class="fill-bg"
+        style="
+          padding-top: 182px;
+          background-image: url('img/success-stories/general/01.png');
+        "
       >
-        <div class="intro-body">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6 col-md-7 col-lg-ml">
-                <p class="f-size-15 text-shadow-none mb-0">REPORTS</p>
-                <h1>
-                  <span class="fw-800">Read our</span> <br />
-                  <span class="fw-300">Latest research</span>
-                </h1>
-                <form class="search-form p-0">
-                  <div class="input-icons">
-                    <i class="fa fa-search fa-md icon-input"></i>
-                    <input
-                      type="text"
-                      placeholder="Search all research reports..."
-                      class="form-control search-field input-field-icon"
-                    />
-                  </div>
-                </form>
+        <div class="container" style="padding-bottom: 90px">
+          <div class="row">
+            <div class="col-lg-6 col-md-7 col-lg-ml col-xs-12 color-white">
+              <p class="f-size-15 text-shadow-none mb-0">REPORTS</p>
+              <h1>
+                <span class="fw-800">Read our</span> <br />
+                <span class="fw-300">Latest research</span>
+              </h1>
+              <div class="search-form p-0">
+                <div class="input-icons">
+                  <i class="fa fa-search fa-md icon-input"></i>
+                  <input
+                    id="inputSearch"
+                    onkeyup="searchResearch()"
+                    type="text"
+                    placeholder="Search all research reports..."
+                    class="form-control search-field input-field-icon"
+                  />
+                </div>
               </div>
-              <div class="col-lg-12"></div>
+            </div>
+            <div class="col-xs-12">
+              <div id="card-slider" class="splide">
+                <div class="splide__track">
+                  <div class="splide__list" id="listResearchs">
+                    <div class="splide__slide card-square">
+                      <div class="card__info">
+                        <h4 class="color-red mb-1 f-size-24">
+                          Global real state perspective
+                        </h4>
+                        <p>
+                          Te guiamos en el proceso de inversión, compra, venta o
+                          alquiler de espacios inmobiliarios.
+                        </p>
+                        <div
+                          class="
+                            d-flex
+                            justify-content-between
+                            align-items-center
+                          "
+                        >
+                          <div class="d-flex align-items-center">
+                            <button
+                              type="button"
+                              class="btn btn-red btn-lg"
+                              style="border-radius: 0 !important"
+                            >
+                              READ
+                            </button>
+                            <div>
+                              <span
+                                style="border-left: 1px solid #d31216"
+                                class="ml-1 pl-1"
+                                >AUG, 09</span
+                              >
+                            </div>
+                          </div>
+                          <a href="#"
+                            ><ion-icon
+                              name="download-outline"
+                              class="color-red f-size-24"
+                            ></ion-icon>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="splide__slide card-square">
+                      <div class="card__info">
+                        <h4 class="color-red mb-1 f-size-24">
+                          Economic insights
+                        </h4>
+                        <p>
+                          Te guiamos en el proceso de inversión, compra, venta o
+                          alquiler de espacios inmobiliarios.
+                        </p>
+                        <div
+                          class="
+                            d-flex
+                            justify-content-between
+                            align-items-center
+                          "
+                        >
+                          <div class="d-flex align-items-center">
+                            <button
+                              type="button"
+                              class="btn btn-red btn-lg"
+                              style="border-radius: 0 !important"
+                            >
+                              READ
+                            </button>
+                            <div>
+                              <span
+                                style="border-left: 1px solid #d31216"
+                                class="ml-1 pl-1"
+                                >AUG, 03</span
+                              >
+                            </div>
+                          </div>
+                          <a href="#"
+                            ><ion-icon
+                              name="download-outline"
+                              class="color-red f-size-24"
+                            ></ion-icon>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="splide__slide card-square">
+                      <div class="card__info">
+                        <h4 class="color-red mb-1 f-size-24">
+                          Future of Global Logistics
+                        </h4>
+                        <p>
+                          Te guiamos en el proceso de inversión, compra, venta o
+                          alquiler de espacios inmobiliarios.
+                        </p>
+                        <div
+                          class="
+                            d-flex
+                            justify-content-between
+                            align-items-center
+                          "
+                        >
+                          <div class="d-flex align-items-center">
+                            <button
+                              type="button"
+                              class="btn btn-red btn-lg"
+                              style="border-radius: 0 !important"
+                            >
+                              READ
+                            </button>
+                            <div>
+                              <span
+                                style="border-left: 1px solid #d31216"
+                                class="ml-1 pl-1"
+                                >JUL, 23</span
+                              >
+                            </div>
+                          </div>
+                          <a href="#"
+                            ><ion-icon
+                              name="download-outline"
+                              class="color-red f-size-24"
+                            ></ion-icon>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="splide__slide card-square">
+                      <div class="card__info">
+                        <h4 class="color-red mb-1 f-size-24">
+                          Economic insights
+                        </h4>
+                        <p>
+                          Te guiamos en el proceso de inversión, compra, venta o
+                          alquiler de espacios inmobiliarios.
+                        </p>
+                        <div
+                          class="
+                            d-flex
+                            justify-content-between
+                            align-items-center
+                          "
+                        >
+                          <div class="d-flex align-items-center">
+                            <button
+                              type="button"
+                              class="btn btn-red btn-lg"
+                              style="border-radius: 0 !important"
+                            >
+                              READ
+                            </button>
+                            <div>
+                              <span
+                                style="border-left: 1px solid #d31216"
+                                class="ml-1 pl-1"
+                                >AUG, 03</span
+                              >
+                            </div>
+                          </div>
+                          <a href="#"
+                            ><ion-icon
+                              name="download-outline"
+                              class="color-red f-size-24"
+                            ></ion-icon>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -350,6 +532,11 @@
 
     <!-- navbar collapse -->
     <script src="js/navbar-collapse.js"></script>
+    <!-- carousel -->
+    <script src="js/carousel.js"></script>
+    <script src="js/splide.min.js"></script>
+
+    <script src="js/search.js"></script>
 
     <script
       type="module"

@@ -2,7 +2,7 @@ var prevScrollpos = window.pageYOffset;
 
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
+  if (prevScrollpos >= currentScrollPos) {
     document.getElementById("nav-menu-collapse").style.top = "0";
   } else {
     document.getElementById("nav-menu-collapse").style.top = "-64px";

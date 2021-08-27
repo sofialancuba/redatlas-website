@@ -1,0 +1,36 @@
+.splide__pagination {
+  display: none;
+}
+
+.splide__arrow {
+  bottom: 0;
+  top: 100%;
+  transform: translateY(0);
+}
+
+.splide__arrow--prev {
+  right: 7rem;
+  left: auto;
+}
+.splide__track {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.splide__arrows button svg {
+  width: 10px;
+  height: 10px;
+  fill: #fff;
+}
+.splide__arrows button {
+  background-color: #d31216;
+  opacity: 1;
+}
+
+.splide__arrows button:disabled {
+  opacity: 0.6;
+}
+
+.splide__list {
+  display: flex;
+  align-items: flex-start;
+}
