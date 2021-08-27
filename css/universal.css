@@ -1244,6 +1244,9 @@ a.btn-nav .btn {
   .intro-investors {
     margin-top: 78px !important;
   }
+  .intro-contact {
+    padding-top: 150px !important;
+  }
 }
 @media (max-width: 810px) {
   .col-sm-mx {
@@ -1534,6 +1537,9 @@ a.btn-nav .btn {
 .intro-careers,
 .intro-investors {
   margin-top: 182px;
+}
+.intro-contact {
+  padding-top: 250px;
 }
 
 .intro .intro-body,
@@ -1928,11 +1934,6 @@ input[type="radio"] {
   padding-top: 10px;
 }
 
-@media (max-width: 991px) {
-  #contact {
-    text-align: center;
-  }
-}
 /* Quote */
 blockquote {
   padding: 18px;
