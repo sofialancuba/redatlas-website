@@ -3255,7 +3255,8 @@ li .shop-cart a:hover {
 }
 
 .modal-message,
-.modal-video {
+.modal-video,
+.modal-message-error {
   position: fixed;
   top: 0;
   right: 0;

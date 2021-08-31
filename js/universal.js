@@ -289,8 +289,17 @@
       $(".modal-message").addClass("d-flex");
       $(".modal-message").removeClass("d-none");
     }
+    if (lastIndexOf === "sent") {
+      $(".modal-message-error").addClass("d-flex");
+      $(".modal-message-error").removeClass("d-none");
+    }
     $("#acceptModalMessage").on("click", function (e) {
       $(".modal-message").addClass("d-none");
+      $(".modal-message").removeClass("d-flex");
+    });
+    $("#acceptModalMessageError").on("click", function (e) {
+      $(".modal-message-error").addClass("d-none");
+      $(".modal-message-error").removeClass("d-flex");
     });
 
     /***********************************************
@@ -633,11 +642,28 @@ function sendForm() {
     url: "https://api.atlas.red/api/contact",
     cache: false,
     data: $("#form_contact").serialize(),
-    error: function (e) {
-      $(".modal-message").addClass("d-flex");
-      $(".modal-message").removeClass("d-none");
+    error: (e) => {
+      $(".modal-message-error").addClass("d-flex");
+      $(".modal-message-error").removeClass("d-none");
     },
-  }).done(function (h) {
+  }).done((h) => {
+    $(".modal-message").addClass("d-flex");
+    $(".modal-message").removeClass("d-none");
+  });
+  return false;
+}
+
+function sendFormSuscribe() {
+  $.ajax({
+    type: "POST",
+    url: "https://api.atlas.red/api/contact",
+    cache: false,
+    data: $("#form_suscribe").serialize(),
+    error: (e) => {
+      $(".modal-message-error").addClass("d-flex");
+      $(".modal-message-error").removeClass("d-none");
+    },
+  }).done((h) => {
     $(".modal-message").addClass("d-flex");
     $(".modal-message").removeClass("d-none");
   });

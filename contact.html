@@ -342,8 +342,8 @@
           <div class="col-sm-3 mb-sm-6">
             <p class="title-footer-menu">JOIN OUR MAILING LIST</p>
             <form
-              id="form_contact"
-              onsubmit="return sendForm()"
+              id="form_suscribe"
+              onsubmit="return sendFormSuscribe()"
               action=""
               name="sentMessage"
             >
@@ -426,6 +426,21 @@
           </p>
           <div class="d-flex justify-content-center">
             <div class="btn btn-red" id="acceptModalMessage">Got it</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal message error -->
+    <div class="modal-message-error d-none">
+      <div class="row d-flex justify-content-center row-custom">
+        <div class="col-6 col-sm-6 col-md-8 col-lg-10 col-xl-10 modal-content">
+          <h4 class="text-center">
+            An error occurred while submitting your data
+          </h4>
+          <p class="text-center">Please try again.</p>
+          <div class="d-flex justify-content-center">
+            <div class="btn btn-red" id="acceptModalMessageError">Got it</div>
           </div>
         </div>
       </div>

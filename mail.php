@@ -24,10 +24,9 @@ $smtp = false;
 $email = $_POST['email'];
 
 $msg =
-'Name:	'.$_POST['first_name']. ' ' . $_POST['last_name'] . '<br />
+'Name:	'.$_POST['name'].'<br />
+Company:	'.$_POST['company'].'<br />
 Email:	'.$_POST['email'].'<br />
-Subject: '.$_POST['subject'].'<br />
-Organization:	'.$_POST['organization'].'<br />
 Phone number:	'.$_POST['phone'].'<br />
 
 Message:<br /><br />
@@ -55,10 +54,10 @@ if ($smtp) {
 
 $mail->Timeout = 360;
 
-$mail->Subject = $_POST['subject'] ." | in atlas.red";
-$from = $_POST['first_name'] . " " . $_POST['last_name'];
+$mail->Subject = "New contact | in atlas.red";
+$from = $_POST['name'];
 $mail->From = $email;
-$mail->FromName = $_POST['first_name'] . " " . $_POST['last_name'];
+$mail->FromName = $_POST['name'];
 $mail->AddReplyTo($email, $from);
 $mail->AddAddress($emailAddressTo, '');
 $mail->AddAddress('info@atlas.red', '');
@@ -72,10 +71,9 @@ $mail->Body = $msg;
 $fecha = new DateTime();
 
 $msgTxt=
-    'Name: '.$_POST['first_name'] . " " . $_POST['last_name'].'
+'Name: '.$_POST['name'].'
+Company: '.$_POST['company'].'
 Email: '.$_POST['email'].'
-Subject: '.$_POST['subject'].'
-Organization: '.$_POST['organization'].'
 Phone: '.$_POST['phone'].'
 Message:
 '.nl2br($_POST['message']).'
@@ -86,7 +84,7 @@ write_log($msgTxt . "\n");
 write_log("\n");
 
 if (!$mail->Send()) {
-    mail($emailAddressTo, "New message from ".$_POST['first_name']." | in atlas.red", $msg);
+    mail($emailAddressTo, "New message from ".$_POST['name']." | in atlas.red", $msg);
 }
 
 header("Location: https://atlas.red#sent");
